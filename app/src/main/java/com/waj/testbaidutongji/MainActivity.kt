@@ -18,6 +18,11 @@ class MainActivity : Activity() {
             Toast.makeText(this,"hello,world",Toast.LENGTH_LONG).show()
         }
 
+        button2.setOnClickListener {
+            Toast.makeText(this,"button2",Toast.LENGTH_LONG).show()
+            StatService.onEvent(this, "waj123", "事件标签名", 1)
+        }
+
         // 获取测试设备ID
         val testDeviceId = StatService.getTestDeviceId(this)
         // 日志输出

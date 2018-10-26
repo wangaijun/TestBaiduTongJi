@@ -5,7 +5,9 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+>
 
     <Button
             android:id="@+id/button1"
@@ -14,5 +16,15 @@
             android:text="Hello World!"
             android:gravity="center"
             />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:gravity="center"
+    />
+
+
 
 </LinearLayout>
